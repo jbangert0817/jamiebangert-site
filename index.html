@@ -1,54 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jamie Bangert</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; scroll-behavior: smooth; }
-    section { height: 100vh; padding: 40px; color: white; }
-    #home { background: #00573d; }
-    #about { background: #008c62; }
-    #work { background: #00b98f; }
-    #contact { background: #00e6bb; color: black; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+      color: #333;
+    }
     nav {
       position: fixed;
       top: 0;
       width: 100%;
-      background: #000;
-      padding: 10px;
-      text-align: center;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+      padding: 1em;
+      display: flex;
+      justify-content: center;
     }
     nav a {
-      margin: 0 15px;
-      color: white;
+      margin: 0 20px;
       text-decoration: none;
+      color: #00573d;
       font-weight: bold;
+    }
+    section {
+      padding: 100px 20px;
+      min-height: 100vh;
+    }
+    .hero {
+      background: #f5f5f5;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+    .hero p {
+      font-size: 1.5em;
+      color: #555;
+    }
+    .section-title {
+      font-size: 2em;
+      color: #00573d;
+      margin-bottom: 0.5em;
+    }
+    .cta {
+      text-align: center;
+      padding: 50px 20px;
+      background: #e6f3ef;
+    }
+    .cta a {
+      background: #00573d;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.2em;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #00573d;
+      color: white;
     }
   </style>
 </head>
 <body>
   <nav>
-    <a href="#home">Home</a>
     <a href="#about">About</a>
-    <a href="#work">Work</a>
-    <a href="#contact">Contact</a>
+    <a href="#vision">Why CMG</a>
+    <a href="#connect">Connect</a>
   </nav>
-  <section id="home">
-    <h1>Hi, I'm Jamie 👋</h1>
-    <p>Social butterfly. Sales recruiter. Mortgage matchmaker.</p>
+
+  <section class="hero">
+    <h1>Hi, I’m Jamie Bangert 👋</h1>
+    <p>Building with Trust. Leading with Heart.</p>
   </section>
+
   <section id="about">
-    <h1>About Me</h1>
-    <p>I started in ops, built dashboards, strategies, platforms... now I close talent.</p>
+    <h2 class="section-title">About Me</h2>
+    <p>I’m a social butterfly who started in ops, built platforms, and found my calling in connecting top-tier talent to the right opportunity. I show up for my people — whether that’s helping you navigate a big move or making sure you’ve got what you need to grow. I’m here to build something real, with people who mean it.</p>
   </section>
-  <section id="work">
-    <h1>My Work</h1>
-    <p>Helping loan officers level up their career and leadership at CMG Home Loans.</p>
+
+  <section id="vision">
+    <h2 class="section-title">Why CMG</h2>
+    <p>At CMG, we’re big on two things: building smart and leading with heart. You get the freedom to grow your way, but never feel like you're out there alone. You get support that scales with you.</p>
+    <ul>
+      <li>Frustrated with slow ops? → We’re built for speed without the chaos.</li>
+      <li>Feeling siloed? → We operate like a team, not a title.</li>
+      <li>No voice where you are? → Leadership here listens—and acts.</li>
+    </ul>
   </section>
-  <section id="contact">
-    <h1>Let’s Connect</h1>
-    <p>jamie@jamiebangert.com</p>
+
+  <section id="connect" class="cta">
+    <h2>Let’s Connect</h2>
+    <p>Ready for a real convo? I’d love to hear your story.</p>
+    <a href="https://calendly.com/jlbangert" target="_blank">📅 Book a Call</a>
   </section>
+
+  <footer>
+    <p>© 2025 Jamie Bangert | Built with heart & hosted on Vercel</p>
+    <p><a href="mailto:jamie@jamiebangert.com" style="color: #e0f7f1;">jamie@jamiebangert.com</a></p>
+  </footer>
 </body>
 </html>
