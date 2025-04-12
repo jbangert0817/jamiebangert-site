@@ -8,7 +8,8 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #fffdf7, #f9f3e8);
+      background: linear-gradient(to bottom, #fff8ee, #fbead6);
+      background-attachment: fixed;
       color: #333;
       scroll-behavior: smooth;
     }
@@ -17,7 +18,7 @@
       width: 100%;
       top: 0;
       background: rgba(255,255,255,0.95);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       padding: 1em;
       display: flex;
       justify-content: center;
@@ -57,6 +58,19 @@
       border-bottom: 2px solid #c89c47;
       display: inline-block;
       padding-bottom: 0.2em;
+    }
+    .card {
+      background: #ffffffcc;
+      border-left: 5px solid #c89c47;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin: 20px 0;
+    }
+    .card a {
+      color: #c89c47;
+      text-decoration: none;
+      font-weight: bold;
     }
     .gallery {
       display: flex;
@@ -111,6 +125,9 @@
 <body>
   <nav>
     <a href="#about">About</a>
+    <a href="#beliefs">Beliefs</a>
+    <a href="#growth">Growth</a>
+    <a href="#tools">Tools</a>
     <a href="#thisisme">This is Me</a>
     <a href="#connect">Connect</a>
   </nav>
@@ -121,19 +138,82 @@
     <p>Building with Trust. Leading with Heart.</p>
   </section>
 
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>I’ve never been one for titles. What matters to me? Relationships that matter, and growth that feels aligned.</p>
+    <p>I started behind the scenes in the mortgage world — building systems, designing strategy, and developing leaders. Over time, I realized that where people work matters just as much as what they do.</p>
+    <p>Now, I work with high-performing loan officers to help them find the kind of alignment that lights a fire — where leadership shows up, culture feels real, and growth actually means something.</p>
+    <p>When I’m not doing that, you’ll find me hiking with Arlo, paddleboarding somewhere beautiful, or chasing the kind of adventure that reminds me why we do this work.</p>
+  </section>
+
+  <section id="beliefs">
+    <h2 class="section-title">What I Believe</h2>
+    <ul>
+      <li>The best companies grow <strong>with</strong> you — not just from you</li>
+      <li>Great leadership starts with listening</li>
+      <li>Culture should be felt, not forced</li>
+      <li>Growth isn’t one-size-fits-all</li>
+      <li>You deserve to work somewhere that feels like alignment, not sacrifice</li>
+    </ul>
+  </section>
+
+  <section id="growth">
+    <h2 class="section-title">Fuel for Growth</h2>
+    <div class="card">
+      <h3>📘 Book of the Month: <em>Thinking in Bets</em> by Annie Duke</h3>
+      <p>If you’re navigating tough decisions or uncertain seasons, this one’s for you.</p>
+      <a href="https://www.audible.com/pd/Thinking-in-Bets-Audiobook/B078SDRSGX?source_code=ASSGB149080119000H&share_location=pdp" target="_blank">🎧 Listen on Audible</a>
+    </div>
+
+    <div class="card">
+      <h3>🎧 Million Dollar Mortgage Experience</h3>
+      <p>Hosted by Jon Maddux — insights for thriving in the super jumbo and non-QM space.</p>
+      <a href="https://podcasts.apple.com/us/podcast/million-dollar-mortgage-experience/id1450623805" target="_blank">Listen on Apple Podcasts</a>
+    </div>
+
+    <div class="card">
+      <h3>🎧 The Loan Officer Podcast</h3>
+      <p>Hosted by Dustin Owen & John Coleman — mortgage, sales, mindset, and mentorship.</p>
+      <a href="https://podcasts.apple.com/us/podcast/the-loan-officer-podcast/id1450122627" target="_blank">Listen on Apple Podcasts</a>
+    </div>
+  </section>
+
+  <section id="tools">
+    <h2 class="section-title">Tools That Help You Win</h2>
+    <div class="card">
+      <h3>✅ Mortgage Coach</h3>
+      <p>This isn’t just a presentation tool — it’s how top producers build transparency and trust.</p>
+      <a href="https://www.mortgagecoach.com" target="_blank">Visit Mortgage Coach</a>
+    </div>
+    <div class="card">
+      <h3>✅ A CRM That Works For You</h3>
+      <p>CMG’s built-in CRM helps you stay visible, not spammy — and keeps your realtors close.</p>
+    </div>
+    <div class="card">
+      <h3>✅ Agent Communication Strategy</h3>
+      <p>The most successful LOs I work with have a system to stay top-of-mind with their realtors — without feeling salesy.</p>
+      <p><em>*Coming soon: My favorite weekly touchpoint templates*</em></p>
+    </div>
+    <div class="card">
+      <h3>✅ A Winning Morning Routine</h3>
+      <p>You can’t lead others if you’re showing up to your day reactive and burnt out.</p>
+      <p><em>*Coming soon: My personal AM routine worksheet*</em></p>
+    </div>
+  </section>
+
   <section id="thisisme">
     <h2 class="section-title">This is Me</h2>
     <div class="gallery">
       <div class="gallery-item">
-        <img src="solo.jpg" alt="Jamie solo adventure photo placeholder">
+        <img src="solo.jpg" alt="Jamie solo adventure photo">
         <p>Wild-hearted and always exploring</p>
       </div>
       <div class="gallery-item">
-        <img src="arlo.jpg" alt="Jamie and Arlo photo placeholder">
+        <img src="arlo.jpg" alt="Jamie and Arlo">
         <p>Soulpup & forever trail partner</p>
       </div>
       <div class="gallery-item">
-        <img src="kuhla.jpg" alt="Jamie and Kuhla photo placeholder">
+        <img src="kuhla.jpg" alt="Jamie and Kuhla">
         <p>Grounded, present, and leading with heart</p>
       </div>
     </div>
