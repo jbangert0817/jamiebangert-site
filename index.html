@@ -13,10 +13,216 @@
       color: #333;
       scroll-behavior: smooth;
     }
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      padding: 1em;
+      display: flex;
+      justify-content: center;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #00573d;
+      font-weight: bold;
+    }
+    section {
+      padding: 100px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .hero {
+      text-align: center;
+      padding-top: 140px;
+    }
+    .hero img {
+      border-radius: 100px;
+      width: 180px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      color: #00573d;
+    }
+    .hero p {
+      color: #c89c47;
+      font-size: 1.3em;
+    }
+    .section-title {
+      color: #00573d;
+      font-size: 2em;
+      border-bottom: 2px solid #c89c47;
+      display: inline-block;
+      padding-bottom: 0.2em;
+    }
+    .card {
+      background: #ffffffcc;
+      border-left: 5px solid #c89c47;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin: 20px 0;
+    }
+    .card a {
+      color: #c89c47;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .gallery-item {
+      width: 280px;
+      text-align: center;
+    }
+    .gallery-item img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .connect {
+      text-align: center;
+      margin-top: 80px;
+    }
+    .connect h2 {
+      color: #00573d;
+      font-size: 2em;
+    }
+    .connect a {
+      display: inline-block;
+      margin: 10px;
+      background: #c89c47;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 1.1em;
+      text-decoration: none;
+    }
+    footer {
+      background: #00573d;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
   </style>
 </head>
 <body>
-  <h1 style="text-align:center; margin-top:100px;">🚧 Final JamieBangert.com site is being generated…</h1>
-  <p style="text-align:center;">This is a placeholder while I stitch together the complete version with all final content, PDFs, and styling updates. Stay tuned!</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#beliefs">Beliefs</a>
+    <a href="#growth">Growth</a>
+    <a href="#tools">Tools</a>
+    <a href="#why">Why Me</a>
+    <a href="#thisisme">This is Me</a>
+    <a href="#connect">Connect</a>
+  </nav>
+
+  <section class="hero">
+    <img src="headshot.jpg" alt="Jamie Bangert">
+    <h1>Hi, I'm Jamie Bangert 👋</h1>
+    <p>Building with Trust. Leading with Heart.</p>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>I’ve never been one for titles. What matters to me? Relationships that matter, and growth that feels aligned.</p>
+    <p>I started behind the scenes in the mortgage world — building systems, designing strategy, and developing leaders. Over time, I realized that where people work matters just as much as what they do.</p>
+    <p>Now, I work with high-performing loan officers to help them find the kind of alignment that lights a fire — where leadership shows up, culture feels real, and growth actually means something.</p>
+    <p>When I’m not doing that, you’ll find me hiking with Arlo, paddleboarding somewhere beautiful, or chasing the kind of adventure that reminds me why we do this work.</p>
+  </section>
+
+  <section id="beliefs">
+    <h2 class="section-title">What I Believe</h2>
+    <ul>
+      <li>The best companies grow with you — not just from you</li>
+      <li>Great leadership starts with listening</li>
+      <li>Culture should be felt, not forced</li>
+      <li>Growth isn’t one-size-fits-all</li>
+      <li>You deserve to work somewhere that feels like alignment, not sacrifice</li>
+    </ul>
+  </section>
+
+  <section id="growth">
+    <h2 class="section-title">Fuel for Growth</h2>
+    <div class="card">
+      <h3>Book of the Month: Thinking in Bets by Annie Duke</h3>
+      <p>If you’re navigating tough decisions or uncertain seasons, this one’s for you.</p>
+      <a href="https://www.audible.com/pd/Thinking-in-Bets-Audiobook/B078SDRSGX?source_code=ASSGB149080119000H&share_location=pdp" target="_blank">Listen on Audible</a>
+    </div>
+    <div class="card">
+      <h3>Million Dollar Mortgage Experience</h3>
+      <p>Hosted by Jon Maddux — insights for thriving in the super jumbo and non-QM space.</p>
+      <a href="https://podcasts.apple.com/us/podcast/million-dollar-mortgage-experience/id1450623805" target="_blank">Listen on Apple Podcasts</a>
+    </div>
+    <div class="card">
+      <h3>The Loan Officer Podcast</h3>
+      <p>Hosted by Dustin Owen & John Coleman — mortgage, sales, mindset, and mentorship.</p>
+      <a href="https://podcasts.apple.com/us/podcast/the-loan-officer-podcast/id1450122627" target="_blank">Listen on Apple Podcasts</a>
+    </div>
+  </section>
+
+  <section id="tools">
+    <h2 class="section-title">Tools That Help You Win</h2>
+    <div class="card">
+      <h3>Mortgage Coach</h3>
+      <p>This isn’t just a presentation tool — it’s how top producers build transparency and trust.</p>
+      <a href="https://www.mortgagecoach.com" target="_blank">Visit Mortgage Coach</a>
+    </div>
+    <div class="card">
+      <h3>My Favorite Weekly Touchpoint Template</h3>
+      <p>My exact weekly message — short, kind, and value-packed — to stay top of mind with agents.</p>
+      <a href="weekly_touchpoint.pdf" target="_blank">Download Template</a>
+    </div>
+    <div class="card">
+      <h3>My Personal AM Routine Worksheet</h3>
+      <p>This routine keeps me grounded, aligned, and ready to lead — even when life’s messy.</p>
+      <a href="am_routine.pdf" target="_blank">Download Routine</a>
+    </div>
+  </section>
+
+  <section id="why">
+    <h2 class="section-title">Why Work With Me</h2>
+    <p>I’m not here to fit into this industry — I’m here to raise the bar.</p>
+    <p>I believe your career should feel aligned, your leadership should feel human, and your growth should come without compromise.</p>
+    <p>You get real strategy, honest convos, and support that actually shows up.</p>
+    <a href="why_work_with_jamie.pdf" target="_blank">Download the Full PDF</a>
+  </section>
+
+  <section id="thisisme">
+    <h2 class="section-title">This is Me</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="solo.jpg" alt="Jamie solo">
+        <p>Wild-hearted and always exploring</p>
+      </div>
+      <div class="gallery-item">
+        <img src="arlo.jpg" alt="Jamie and Arlo">
+        <p>Soulpup & forever trail partner</p>
+      </div>
+      <div class="gallery-item">
+        <img src="kuhla.jpg" alt="Jamie and Kuhla">
+        <p>Grounded, present, and leading with heart</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="connect" id="connect">
+    <h2>Let’s Connect</h2>
+    <p>Real talk. No pressure. Let’s figure out what aligned growth looks like for you.</p>
+    <a href="https://calendly.com/jlbangert" target="_blank">Book a Call</a>
+    <a href="mailto:jlbangert@outlook.com">Email Me</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Jamie Bangert | Built with heart & hosted on Vercel</p>
+  </footer>
 </body>
 </html>
