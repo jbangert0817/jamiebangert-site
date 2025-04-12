@@ -8,24 +8,23 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      scroll-behavior: smooth;
-      background-color: #fffdf7;
+      background: linear-gradient(135deg, #fffdf7, #f9f3e8);
       color: #333;
-      overflow-x: hidden;
+      scroll-behavior: smooth;
     }
     nav {
       position: fixed;
-      top: 0;
       width: 100%;
-      background: white;
+      top: 0;
+      background: rgba(255,255,255,0.95);
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      z-index: 1000;
       padding: 1em;
       display: flex;
       justify-content: center;
+      z-index: 1000;
     }
     nav a {
-      margin: 0 20px;
+      margin: 0 15px;
       text-decoration: none;
       color: #00573d;
       font-weight: bold;
@@ -34,190 +33,117 @@
       padding: 100px 20px;
       max-width: 1000px;
       margin: 0 auto;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1s ease-out forwards;
     }
-    section.hero {
-      background: linear-gradient(to bottom, #fffdf7, #f3f1e7);
+    .hero {
       text-align: center;
-      padding-top: 160px;
-      padding-bottom: 100px;
+      padding-top: 140px;
     }
     .hero img {
-      width: 180px;
       border-radius: 100px;
+      width: 180px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
     }
     .hero h1 {
-      font-size: 2.8em;
+      font-size: 2.5em;
       color: #00573d;
-      margin: 0;
     }
     .hero p {
-      font-size: 1.3em;
       color: #c89c47;
+      font-size: 1.3em;
     }
     .section-title {
-      font-size: 2em;
       color: #00573d;
-      margin-bottom: 0.5em;
+      font-size: 2em;
       border-bottom: 2px solid #c89c47;
       display: inline-block;
       padding-bottom: 0.2em;
     }
-    .card {
-      background: #fff;
-      border-left: 6px solid #c89c47;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    .card h3 {
-      margin-top: 0;
-      color: #00573d;
-    }
-    .card a {
-      color: #c89c47;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    .split {
+    .gallery {
       display: flex;
       flex-wrap: wrap;
-      gap: 40px;
-      align-items: center;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 40px;
     }
-    .split img {
-      width: 300px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    }
-    .cta {
+    .gallery-item {
+      width: 280px;
       text-align: center;
-      padding: 60px 20px;
-      background: #f9f9f9;
-      margin-top: 60px;
-      border-top: 4px solid #c89c47;
     }
-    .cta a {
+    .gallery-item img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .gallery-item p {
+      font-size: 1em;
+      margin-top: 10px;
+      color: #555;
+    }
+    .connect {
+      text-align: center;
+      margin-top: 80px;
+    }
+    .connect h2 {
+      color: #00573d;
+      font-size: 2em;
+    }
+    .connect a {
+      display: inline-block;
+      margin: 10px;
       background: #c89c47;
       color: white;
-      padding: 15px 30px;
-      text-decoration: none;
+      padding: 12px 25px;
       border-radius: 8px;
-      font-size: 1.2em;
-      transition: all 0.3s ease;
+      font-size: 1.1em;
+      text-decoration: none;
     }
-    .cta a:hover {
-      background: #b48634;
+    .connect a:hover {
+      background: #b88a3d;
     }
     footer {
-      text-align: center;
-      padding: 40px 20px;
       background: #00573d;
       color: white;
-    }
-    footer a {
-      color: #e0f7f1;
-    }
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: none;
-      }
+      text-align: center;
+      padding: 40px 20px;
     }
   </style>
 </head>
 <body>
   <nav>
     <a href="#about">About</a>
-    <a href="#beliefs">Beliefs</a>
-    <a href="#growth">Fuel</a>
-    <a href="#tools">Tools</a>
+    <a href="#thisisme">This is Me</a>
     <a href="#connect">Connect</a>
   </nav>
 
   <section class="hero">
-    <img src="headshot.jpg" alt="Jamie Bangert headshot" />
-    <h1>Hi, I’m Jamie Bangert 👋</h1>
+    <img src="headshot.jpg" alt="Jamie Bangert">
+    <h1>Hi, I'm Jamie Bangert 👋</h1>
     <p>Building with Trust. Leading with Heart.</p>
   </section>
 
-  <section id="about" class="split">
-    <div>
-      <h2 class="section-title">About Me</h2>
-      <p>I’ve never been one for titles. What matters to me? Relationships that matter, and growth that feels aligned.</p>
-      <p>I started behind the scenes in the mortgage world — building systems, designing strategy, and developing leaders. Over time, I realized that where people work matters just as much as what they do.</p>
-      <p>Now, I work with high-performing loan officers to help them find the kind of alignment that lights a fire — where leadership shows up, culture feels real, and growth actually means something.</p>
-      <p>When I’m not doing that, you’ll find me hiking with Arlo, paddleboarding somewhere beautiful, or chasing the kind of adventure that reminds me why we do this work.</p>
-    </div>
-    <img src="arlo.jpg" alt="Jamie and Arlo" />
-  </section>
-
-  <section id="beliefs">
-    <h2 class="section-title">What I Believe</h2>
-    <ul>
-      <li>The best companies grow <strong>with</strong> you — not just from you</li>
-      <li>Great leadership starts with listening</li>
-      <li>Culture should be felt, not forced</li>
-      <li>Growth isn’t one-size-fits-all</li>
-      <li>You deserve to work somewhere that feels like alignment, not sacrifice</li>
-    </ul>
-    <p>You’re not just making a career move — you’re building a life. Let’s build it with intention.</p>
-  </section>
-
-  <section id="growth">
-    <h2 class="section-title">Fuel for Growth</h2>
-    <div class="card">
-      <h3>📘 Book of the Month: <em>Thinking in Bets</em> by Annie Duke</h3>
-      <p>If you’re navigating tough decisions or uncertain seasons, this one’s for you.</p>
-      <a href="https://www.audible.com/pd/Thinking-in-Bets-Audiobook/B078SDRSGX?source_code=ASSGB149080119000H&share_location=pdp" target="_blank">🎧 Listen on Audible</a>
-    </div>
-
-    <div class="card">
-      <h3>🎧 Million Dollar Mortgage Experience</h3>
-      <p>Hosted by Jon Maddux — insights for thriving in the super jumbo and non-QM space.</p>
-      <a href="https://podcasts.apple.com/us/podcast/million-dollar-mortgage-experience/id1450623805" target="_blank">Listen on Apple Podcasts</a>
-    </div>
-
-    <div class="card">
-      <h3>🎧 The Loan Officer Podcast</h3>
-      <p>Hosted by Dustin Owen & John Coleman — mortgage, sales, mindset, and mentorship.</p>
-      <a href="https://podcasts.apple.com/us/podcast/the-loan-officer-podcast/id1450122627" target="_blank">Listen on Apple Podcasts</a>
+  <section id="thisisme">
+    <h2 class="section-title">This is Me</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="solo.jpg" alt="Jamie solo adventure photo placeholder">
+        <p>Wild-hearted and always exploring</p>
+      </div>
+      <div class="gallery-item">
+        <img src="arlo.jpg" alt="Jamie and Arlo photo placeholder">
+        <p>Soulpup & forever trail partner</p>
+      </div>
+      <div class="gallery-item">
+        <img src="kuhla.jpg" alt="Jamie and Kuhla photo placeholder">
+        <p>Grounded, present, and leading with heart</p>
+      </div>
     </div>
   </section>
 
-  <section id="tools">
-    <h2 class="section-title">Tools That Help You Win</h2>
-    <div class="card">
-      <h3>✅ Mortgage Coach</h3>
-      <p>This isn’t just a presentation tool — it’s how top producers build transparency and trust.</p>
-      <a href="https://www.mortgagecoach.com" target="_blank">Visit Mortgage Coach</a>
-    </div>
-    <div class="card">
-      <h3>✅ A CRM That Works For You</h3>
-      <p>CMG’s built-in CRM helps you stay visible, not spammy — and keeps your realtors close.</p>
-    </div>
-    <div class="card">
-      <h3>✅ Agent Communication Strategy</h3>
-      <p>The most successful LOs I work with have a system to stay top-of-mind with their realtors — without feeling salesy.</p>
-      <p><em>*Coming soon: My favorite weekly touchpoint templates*</em></p>
-    </div>
-    <div class="card">
-      <h3>✅ A Winning Morning Routine</h3>
-      <p>You can’t lead others if you’re showing up to your day reactive and burnt out.</p>
-      <p><em>*Coming soon: My personal AM routine worksheet*</em></p>
-    </div>
-  </section>
-
-  <section id="connect" class="cta">
+  <section class="connect" id="connect">
     <h2>Let’s Connect</h2>
     <p>Real talk. No pressure. Let’s figure out what aligned growth looks like for you.</p>
     <a href="https://calendly.com/jlbangert" target="_blank">📅 Book a Call</a>
-    <p style="margin-top: 1em;">📩 <a href="mailto:jlbangert@outlook.com">jlbangert@outlook.com</a></p>
+    <a href="mailto:jlbangert@outlook.com">📩 Email Me</a>
   </section>
 
   <footer>
