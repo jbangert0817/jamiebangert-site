@@ -10,6 +10,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       scroll-behavior: smooth;
       color: #333;
+      background-color: #fffdf7;
     }
     nav {
       position: fixed;
@@ -30,32 +31,36 @@
     }
     section {
       padding: 100px 20px;
-      min-height: 100vh;
+      max-width: 900px;
+      margin: 0 auto;
     }
     .hero {
-      background: #f5f5f5;
+      background: linear-gradient(to bottom, #fffdf7, #f3f1e7);
       text-align: center;
     }
     .hero h1 {
       font-size: 3em;
-      margin-bottom: 0.2em;
+      color: #00573d;
     }
     .hero p {
       font-size: 1.5em;
-      color: #555;
+      color: #c89c47;
     }
     .section-title {
       font-size: 2em;
       color: #00573d;
       margin-bottom: 0.5em;
+      border-bottom: 2px solid #c89c47;
+      display: inline-block;
+      padding-bottom: 0.2em;
     }
     .cta {
       text-align: center;
-      padding: 50px 20px;
+      padding: 60px 20px;
       background: #e6f3ef;
     }
     .cta a {
-      background: #00573d;
+      background: #c89c47;
       color: white;
       padding: 15px 30px;
       text-decoration: none;
@@ -65,6 +70,22 @@
     ul {
       margin-top: 1em;
       padding-left: 1.2em;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-left: 6px solid #c89c47;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #00573d;
+    }
+    .card a {
+      color: #c89c47;
+      font-weight: bold;
     }
     footer {
       text-align: center;
@@ -82,6 +103,7 @@
     <a href="#about">About</a>
     <a href="#beliefs">Beliefs</a>
     <a href="#growth">Fuel</a>
+    <a href="#tools">Tools</a>
     <a href="#connect">Connect</a>
   </nav>
 
@@ -112,10 +134,51 @@
 
   <section id="growth">
     <h2 class="section-title">Fuel for Growth</h2>
-    <p>A fresh monthly rec to challenge your thinking, grow your mindset, and support your leadership journey.</p>
-    <h3>📘 Book of the Month:</h3>
-    <p><strong>Thinking in Bets</strong> by Annie Duke<br />
-    “If you’re navigating tough decisions or uncertain seasons, this one’s for you.”</p>
+
+    <div class="card">
+      <h3>📘 Book of the Month: <br><em>Thinking in Bets</em> by Annie Duke</h3>
+      <p>If you’re navigating tough decisions or uncertain seasons, this one’s for you.</p>
+      <a href="https://www.audible.com/pd/Thinking-in-Bets-Audiobook/B078SDRSGX?source_code=ASSGB149080119000H&share_location=pdp" target="_blank">Listen on Audible</a>
+    </div>
+
+    <div class="card">
+      <h3>🎧 Podcast Pick: Million Dollar Mortgage Experience</h3>
+      <p>Hosted by Jon Maddux, this podcast helps LOs succeed in the super jumbo and non-QM space.</p>
+      <a href="https://podcasts.apple.com/us/podcast/million-dollar-mortgage-experience/id1450623805" target="_blank">Listen on Apple Podcasts</a>
+    </div>
+
+    <div class="card">
+      <h3>🎧 Podcast Pick: The Loan Officer Podcast</h3>
+      <p>Hosted by Dustin Owen & John Coleman. Sales, mindset, mentorship, and everything in between.</p>
+      <a href="https://podcasts.apple.com/us/podcast/the-loan-officer-podcast/id1450122627" target="_blank">Listen on Apple Podcasts</a>
+    </div>
+  </section>
+
+  <section id="tools">
+    <h2 class="section-title">Tools That Help You Win</h2>
+
+    <div class="card">
+      <h3>✅ Mortgage Coach</h3>
+      <p>This isn’t just a presentation tool — it’s how top producers build transparency and trust.</p>
+      <a href="https://www.mortgagecoach.com" target="_blank">Visit Mortgage Coach</a>
+    </div>
+
+    <div class="card">
+      <h3>✅ A CRM That Works For You</h3>
+      <p>CMG’s built-in CRM helps you stay visible, not spammy — and keeps your realtors close.</p>
+    </div>
+
+    <div class="card">
+      <h3>✅ Agent Communication Strategy</h3>
+      <p>The most successful LOs I work with have a system to stay top-of-mind with their realtors — without feeling salesy.</p>
+      <p><em>*Coming soon: My favorite weekly touchpoint templates*</em></p>
+    </div>
+
+    <div class="card">
+      <h3>✅ A Winning Morning Routine</h3>
+      <p>You can’t lead others if you’re showing up to your day reactive and burnt out.</p>
+      <p><em>*Coming soon: My personal AM routine worksheet*</em></p>
+    </div>
   </section>
 
   <section id="connect" class="cta">
