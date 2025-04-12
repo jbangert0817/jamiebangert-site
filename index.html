@@ -1,58 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome to JamieBangert.com</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jamie Bangert | Built on Trust. Grown with Heart.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Open Sans', sans-serif;
       margin: 0;
+      font-family: 'Open Sans', sans-serif;
       background: linear-gradient(to bottom, #fff4e6, #fbe9d0);
+      scroll-behavior: smooth;
       color: #333;
-      padding: 60px;
+    }
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      color: #8a5c2c;
     }
     header {
-      background: #c89c47;
-      padding: 20px;
-      color: white;
-      font-family: 'Playfair Display', serif;
-      font-size: 2em;
+      text-align: center;
+      padding: 100px 20px 60px;
+      background: #fff5eb;
     }
-    nav a {
-      margin: 10px;
-      text-decoration: none;
-      color: #8a5c2c;
+    header img {
+      border-radius: 120px;
+      width: 180px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 2.8em;
+      margin: 20px 0 10px;
+    }
+    header p {
+      font-size: 1.4em;
+      color: #c89c47;
       font-weight: bold;
     }
-    main {
-      margin-top: 40px;
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .gallery-item {
+      width: 280px;
+      text-align: center;
+    }
+    .gallery-item img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .resource {
+      background: #ffffffcc;
+      border-left: 5px solid #c89c47;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+    }
+    .resource a {
+      color: #c89c47;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .connect {
+      text-align: center;
+      margin-top: 80px;
+    }
+    .connect a {
+      display: inline-block;
+      margin: 10px;
+      background: #c89c47;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 1.1em;
+      text-decoration: none;
     }
     footer {
-      margin-top: 80px;
       background: #8a5c2c;
       color: white;
-      padding: 30px;
       text-align: center;
+      padding: 40px 20px;
     }
   </style>
 </head>
 <body>
-  <header>Welcome to JamieBangert.com</header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="purpose.html">Purpose</a>
-    <a href="tools.html">Tools</a>
-    <a href="growth.html">Growth</a>
-    <a href="connect.html">Connect</a>
-  </nav>
-  <main>
-    <h1>Welcome to JamieBangert.com</h1>
-    <p>Placeholder content for Welcome to JamieBangert.com — ready for full Jamie energy and visuals ✨</p>
-  </main>
-  <footer>
-    &copy; 2025 Jamie Bangert | Built with Trust. Grown with Heart.
-  </footer>
+
+<header>
+  <img src="images/headshot.jpg" alt="Jamie Bangert">
+  <h1>Jamie Bangert</h1>
+  <p>Built on Trust. Grown with Heart.</p>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>This is where the real "About Me" story will go — full of heart, purpose, and no mention of recruiting. It’ll highlight your systems background, leadership journey, soulpup Arlo, and what lights you up in this industry and in life.</p>
+</section>
+
+<section id="purpose">
+  <h2>My Purpose</h2>
+  <p>This section will speak directly to your fire: why you're here, what you're building, and why people want to build with you. It's about connection, vision, and raising the bar on what leadership should feel like.</p>
+</section>
+
+<section id="tools">
+  <h2>Tools That Help You Win</h2>
+  <div class="resource">
+    <h3>CRM That Works for You</h3>
+    <p>Why a CRM matters and how it should support you. (Mortgage Coach link + value)</p>
+  </div>
+  <div class="resource">
+    <h3>All In One Loan</h3>
+    <p>Why this is a game-changer product at CMG. (With link + short explanation)</p>
+  </div>
+  <div class="resource">
+    <h3>HomeFundIt</h3>
+    <p>Explain the referral angle + innovation of this product. (Link out + value)</p>
+  </div>
+  <div class="resource">
+    <h3>Weekly Touchpoint Template</h3>
+    <p><a href="pdfs/weekly_touchpoint.pdf" target="_blank">Download the Template</a> and learn how it helps build consistency with agents.</p>
+  </div>
+  <div class="resource">
+    <h3>AM Routine Worksheet</h3>
+    <p><a href="pdfs/am_routine.pdf" target="_blank">Download the Worksheet</a> and learn why morning grounding matters in sales.</p>
+  </div>
+  <div class="resource">
+    <h3>Questions to Ask Before Making a Move</h3>
+    <p>Real talk prompts that help you decide if you’re in the right place — or just somewhere familiar.</p>
+  </div>
+</section>
+
+<section id="growth">
+  <h2>Fuel for Growth</h2>
+  <div class="resource">
+    <h3>Thinking in Bets (Book)</h3>
+    <p><a href="https://www.audible.com/pd/Thinking-in-Bets-Audiobook/B078SDRSGX" target="_blank">Listen on Audible</a></p>
+  </div>
+  <div class="resource">
+    <h3>Million Dollar Mortgage Experience</h3>
+    <p><a href="https://podcasts.apple.com/us/podcast/million-dollar-mortgage-experience/id1450623805" target="_blank">Listen on Apple Podcasts</a></p>
+  </div>
+  <div class="resource">
+    <h3>The Loan Officer Podcast</h3>
+    <p><a href="https://podcasts.apple.com/us/podcast/the-loan-officer-podcast/id1450122627" target="_blank">Listen on Apple Podcasts</a></p>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>This is Me</h2>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="images/solo.jpg" alt="Jamie solo adventure">
+      <p>Just me — solo, soulful, full of fire</p>
+    </div>
+    <div class="gallery-item">
+      <img src="images/arlo.jpg" alt="Jamie and Arlo">
+      <p>My soulpup Arlo 🐾</p>
+    </div>
+    <div class="gallery-item">
+      <img src="images/kuhla.jpg" alt="Jamie and Kuhla">
+      <p>Kuhla, my steady and wild heart 🐴</p>
+    </div>
+  </div>
+</section>
+
+<section class="connect" id="connect">
+  <h2>Let’s Connect</h2>
+  <p>Let’s talk about what growth, alignment, and soul-centered leadership could look like for you.</p>
+  <a href="mailto:jlbangert@outlook.com">Email Me</a>
+  <a href="https://calendly.com/jlbangert" target="_blank">Book a Call</a>
+  <a href="https://www.linkedin.com/in/jamiebangert/" target="_blank">Find Me on LinkedIn</a>
+</section>
+
+<footer>
+  <p>© 2025 Jamie Bangert | Soul in a Scroll 🌄</p>
+</footer>
+
 </body>
 </html>
