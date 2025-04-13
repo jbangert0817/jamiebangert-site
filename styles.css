@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #fff8ee, #fbead6);
+  color: #4b2e1e;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #4b2e1e;
+  transition: all 0.2s ease;
+}
+
+nav ul li a:hover {
+  color: #d89a4c;
+}
+
+main {
+  padding: 7rem 2rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  color: #cc8a4c;
+  text-shadow: 1px 1px 2px rgba(204, 138, 76, 0.3);
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #5c3a2e;
+}
+
+a {
+  color: #cc8a4c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
