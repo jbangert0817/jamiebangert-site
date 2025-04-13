@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jamie Bangert</title>
+  <title>About - Jamie Bangert</title>
   <style>
     body {
       margin: 0;
@@ -33,82 +33,91 @@
       font-weight: bold;
     }
 
-    .hero {
+    section {
+      padding: 140px 20px 80px;
+      max-width: 900px;
+      margin: 0 auto;
       text-align: center;
-      padding-top: 140px;
     }
 
-    .hero img {
-      border-radius: 100px;
-      width: 180px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-
-    .hero-heading h1 {
-      font-size: 2.5em;
+    h1 {
+      font-size: 2.8em;
       color: #00573d;
-      line-height: 1.3;
-      margin-bottom: 0.5em;
-      text-align: center;
+      margin-bottom: 0.3em;
     }
 
-    .hero-heading .tagline {
-      font-size: 0.9em;
-      font-weight: 600;
-      letter-spacing: 0.3px;
-      display: block;
-      margin-top: 0.3em;
-      color: #333;
+    h2 {
+      color: #c89c47;
+      font-size: 1.5em;
+      margin-top: 0.5em;
     }
 
-    .purpose-text {
-      max-width: 700px;
-      margin: 40px auto 0;
+    p {
       font-size: 1.2em;
-      color: #00573d;
       line-height: 1.6;
+      color: #444;
+      margin-bottom: 1.5em;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .gallery-item {
+      width: 260px;
       text-align: center;
     }
 
-    .purpose-text .slogan {
-      font-size: 1.2em;
-      font-style: italic;
-      font-weight: bold;
-      margin-bottom: 1em;
+    .gallery-item img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
-    .purpose-text p {
-      margin-bottom: 1em;
+    .gallery-item p {
+      margin-top: 0.5em;
+      font-style: italic;
+      font-size: 1em;
+      color: #00573d;
     }
   </style>
 </head>
 <body>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#beliefs">Beliefs</a>
-    <a href="#growth">Growth</a>
-    <a href="#tools">Tools</a>
-    <a href="#why">Why Me</a>
-    <a href="#thisisme">This is Me</a>
-    <a href="#connect">Connect</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="growth.html">Growth</a>
+    <a href="tools.html">Tools</a>
+    <a href="why.html">Why Me</a>
+    <a href="thisisme.html">This is Me</a>
+    <a href="connect.html">Connect</a>
   </nav>
 
-  <section class="hero">
-    <img src="headshot.jpg" alt="Jamie Bangert">
+  <section>
+    <h1>Who I Am</h1>
+    <h2>And why this matters</h2>
+    <p>I’ve never been one for titles. What matters to me is connection — real, aligned, human connection. I started my journey behind the scenes in the mortgage world, building strategy, streamlining processes, and developing leaders. That work led me to where I am now: guiding high-performing loan officers toward the kind of alignment that lights a fire — the kind that feels like coming home.</p>
+    <p>I’ve climbed to the top and started from scratch. I’ve faced challenges most people wouldn’t know. And still, I show up — with heart, with grit, and with a purpose rooted in growth, intuition, and gratitude.</p>
+    <p>This isn’t just about business. It’s about leading with heart, building with trust, and creating a career that lets you breathe again.</p>
 
-    <div class="hero-heading">
-      <h1>
-        Hi, I'm Jamie Bangert 👋<br>
-        <span class="tagline">Building with Trust. Leading with Heart.</span>
-      </h1>
-    </div>
-
-    <div class="purpose-text">
-      <p class="slogan"><strong><em>I’m here to help people find where they’re meant to be.</em></strong></p>
-      <p>
-        It’s not just about a career shift — it’s about aligned growth, real belonging, and leadership that actually feels human. I’ve been at the top, I’ve started over — and what I know is this: when you’re in the right place, with the right people, everything changes. This is the space for that next chapter — the one that finally feels right.
-      </p>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="solo.jpg" alt="Jamie solo">
+        <p>Wild-hearted and always exploring</p>
+      </div>
+      <div class="gallery-item">
+        <img src="arlo.jpg" alt="Jamie and Arlo">
+        <p>Soulpup & forever trail partner</p>
+      </div>
+      <div class="gallery-item">
+        <img src="kuhla.jpg" alt="Jamie and Kuhla">
+        <p>Grounded, present, and leading with heart</p>
+      </div>
     </div>
   </section>
 
