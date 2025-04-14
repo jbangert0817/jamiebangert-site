@@ -108,7 +108,7 @@ nav ul li a:hover {
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.85);
+  background: linear-gradient(135deg, rgba(245, 240, 230, 0.88), rgba(240, 250, 240, 0.88)); background-image: url('plants-texture.png'); background-size: cover; background-blend-mode: lighten;
   border-radius: 1rem;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
   padding: 1rem 1.25rem;
