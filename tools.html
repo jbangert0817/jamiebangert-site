@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tools That Help You Win</title>
+  <link href="styles.css" rel="stylesheet" />
+  <style>
+    .section {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .delay-1 { animation-delay: 0.3s; }
+    .delay-2 { animation-delay: 0.6s; }
+    .delay-3 { animation-delay: 0.9s; }
+    .delay-4 { animation-delay: 1.2s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    .tool-card {
+      background: rgba(250, 240, 220, 0.88);
+      border-radius: 1rem;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      transition: transform 0.3s ease;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .tool-card h3 {
+      margin-top: 0;
+      color: #8c6239;
+    }
+
+    .tool-card p {
+      font-size: 0.98rem;
+      color: #3d2b1f;
+      margin-bottom: 0.5rem;
+    }
+
+    .tool-card a.button {
+      display: inline-block;
+      margin-top: 0.75rem;
+      padding: 0.4rem 0.8rem;
+      background: #cc8a4c;
+      color: white;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .tool-card a.button:hover {
+      background: #b07439;
+    }
+  </style>
+</head>
+<body>
+  <div class="animated-background">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="growth.html">Growth</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="gamechangers.html">Game Changers</a></li>
+        <li><a href="whyme.html">Why Me</a></li>
+        <li><a href="connect.html">Connect</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1 class="section delay-1" style="margin-top: 7rem;">🛠 Tools That Help You Win</h1>
+
+      <section class="section delay-2">
+        <p>The right tools don’t just help you stay organized — they help you stay in motion. These are the ones I use (and love) to build relationships, run smarter, and grow faster.</p>
+      </section>
+
+      <section class="section delay-2">
+        <div class="tool-card">
+          <h3>CRM That Works for You</h3>
+          <p>A good CRM should feel like a partner, not a burden. Surefire by CMG is built for speed, tracking, and relationship-first automation that actually works.</p>
+          <a href="https://join.cmghomeloans.com/recruiting/your-promotion-team/Is%20Your%20CRM%20on%20Steriods%3F" target="_blank" class="button">See CRM in Action</a>
+        </div>
+
+        <div class="tool-card">
+          <h3>Weekly Touchpoint Template</h3>
+          <p>My personal framework for consistent, meaningful outreach to agents and partners — simple, effective, and built for trust.</p>
+          <a href="#" class="button">Download PDF</a>
+        </div>
+
+        <div class="tool-card">
+          <h3>AM Routine Worksheet</h3>
+          <p>A clear morning = clear results. This worksheet helps ground your energy, align your mindset, and set the tone for your day.</p>
+          <a href="#" class="button">Download Worksheet</a>
+        </div>
+
+        <div class="tool-card">
+          <h3>Video Messaging Tips</h3>
+          <p>Cut through the noise. Connect face-to-face. These are the tips I use to stand out in 60 seconds or less — human, fast, and effective.</p>
+          <a href="#" class="button">Get My Tips</a>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
