@@ -108,8 +108,8 @@ nav ul li a:hover {
 }
 
 .social-links a {
-  background: #d6e4d2;
-  color: #3a4032;
+  background: #d6e4d2 !important;
+  color: #3a4032 !important;
   font-weight: 500;
   padding: 0.6rem 1.2rem;
   border-radius: 1rem;
@@ -118,5 +118,5 @@ nav ul li a:hover {
 }
 
 .social-links a:hover {
-  background: #c4d9bd;
+  background: #c4d9bd !important;
 }
