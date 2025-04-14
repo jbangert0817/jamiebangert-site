@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Jamie</title>
+  <link href="styles.css" rel="stylesheet" />
+  <style>
+    .section {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .delay-1 { animation-delay: 0.3s; }
+    .delay-2 { animation-delay: 0.6s; }
+    .delay-3 { animation-delay: 0.9s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .gallery-item {
+      text-align: center;
+    }
+
+    .gallery-item img {
+      width: 220px;
+      border-radius: 1rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery-item small {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      color: #6d4f38;
+    }
+  </style>
+</head>
+<body>
+  <div class="animated-background">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="growth.html">Growth</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="gamechangers.html">Game Changers</a></li>
+        <li><a href="whyme.html">Why Me</a></li>
+        <li><a href="connect.html">Connect</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1 class="section delay-1" style="margin-top: 7rem;">Meet Jamie</h1>
+
+      <section class="section delay-1">
+        <p>I’m not just here to talk about change — I’m here to help make it happen. Driven by vision, grounded in results, and always chasing what’s possible.</p>
+        <p>I’ve built platforms, scaled teams, driven growth, and reinvented entire systems. And while I live for a strong Q1 — I also live for the next road trip, paddle out, or sunrise hike with my dog, Arlo.</p>
+        <p>I believe leadership starts with listening. That trust is the best strategy. And that growth — the real kind — doesn’t come from playing it safe.</p>
+      </section>
+
+      <section class="section delay-2">
+        <h2 style="color:#8c6239;">Real-Life Meets Real Results</h2>
+        <p>I work with people who are <em>ready</em> — for more alignment, more clarity, and more ownership in their next move. People who’ve done the work. Who want more than just another title — they want to <strong>feel it</strong>.</p>
+        <p>The momentum. The fit. The forward motion. That’s what I help uncover.</p>
+      </section>
+
+      <section class="gallery section delay-3">
+        <div class="gallery-item">
+          <img src="solo.jpg" alt="Jamie Bangert">
+          <small>Living bold, leading with heart.</small>
+        </div>
+        <div class="gallery-item">
+          <img src="arlo.jpg" alt="Arlo the Adventure Pup">
+          <small>My soulpup and trail partner 🐶</small>
+        </div>
+        <div class="gallery-item">
+          <img src="kuhla.jpg" alt="Kuhla the Horse">
+          <small>Grounded strength, wild spirit 🐴</small>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
