@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Let’s Connect</title>
+  <link href="styles.css" rel="stylesheet" />
+  <style>
+    .section {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    .delay-1 { animation-delay: 0.3s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    .contact-box {
+      background: rgba(250, 240, 220, 0.92);
+      border-radius: 2rem;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.07);
+      padding: 2.5rem;
+      margin: 3rem auto;
+    }
+
+    .contact-box h2 {
+      color: #8c6239;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-box p {
+      font-size: 1.05rem;
+      color: #3d2b1f;
+      margin: 0.5rem 0;
+    }
+
+    .contact-box a {
+      color: #cc8a4c;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .contact-box a:hover {
+      color: #a76d36;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin-top: 2rem;
+    }
+
+    .social-links a {
+      background: #cc8a4c;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background: #a56c35;
+    }
+  </style>
+</head>
+<body>
+  <div class="animated-background">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="growth.html">Growth</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="gamechangers.html">Game Changers</a></li>
+        <li><a href="whyme.html">Why Me</a></li>
+        <li><a href="connect.html">Connect</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="section delay-1">
+        <h1 style="margin-top: 7rem;">Let’s Connect</h1>
+        <p style="margin-top: 1rem;">This doesn’t have to be formal. This doesn’t have to be final.<br>It just has to feel right to start.</p>
+      </section>
+
+      <section class="contact-box section delay-1">
+        <h2>Contact Info</h2>
+        <p><strong>Phone:</strong> <a href="tel:8044770017">804-477-0017</a></p>
+        <p><strong>Email:</strong> <a href="mailto:jlbangert@outlook.com">jlbangert@outlook.com</a></p>
+        <p><strong>Work Email:</strong> <a href="mailto:jbangert@cmghomeloans.com">jbangert@cmghomeloans.com</a></p>
+
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/jamiebangert/" target="_blank">LinkedIn</a>
+          <a href="https://calendly.com/jlbangert" target="_blank">Calendly</a>
+          <a href="#">Facebook (Coming Soon)</a>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

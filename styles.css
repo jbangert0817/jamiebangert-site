@@ -106,3 +106,17 @@ nav ul li a:hover {
     transform: none;
   }
 }
+
+.social-links a {
+  background: #d6e4d2;
+  color: #3a4032;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #c4d9bd;
+}
