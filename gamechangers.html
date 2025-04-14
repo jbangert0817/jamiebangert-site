@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Changers</title>
+  <link href="styles.css" rel="stylesheet" />
+  <style>
+    .section {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .delay-1 { animation-delay: 0.3s; }
+    .delay-2 { animation-delay: 0.6s; }
+    .delay-3 { animation-delay: 0.9s; }
+    .delay-4 { animation-delay: 1.2s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    .gamecard {
+      background: rgba(250, 240, 220, 0.9);
+      border-radius: 1.25rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.5rem;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .gamecard:hover {
+      transform: translateY(-5px);
+    }
+
+    .gamecard img {
+      max-width: 90px;
+      margin-bottom: 1rem;
+    }
+
+    .gamecard h3 {
+      color: #8c6239;
+      margin-bottom: 0.5rem;
+    }
+
+    .gamecard p {
+      font-size: 1.05rem;
+      color: #3d2b1f;
+      line-height: 1.6;
+    }
+
+    .gamecard a {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #cc8a4c;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .gamecard a:hover {
+      background: #b36f34;
+    }
+  </style>
+</head>
+<body>
+  <div class="animated-background">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="growth.html">Growth</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="gamechangers.html">Game Changers</a></li>
+        <li><a href="whyme.html">Why Me</a></li>
+        <li><a href="connect.html">Connect</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1 class="section delay-1" style="margin-top: 7rem; text-align: center;">🚀 Game Changers</h1>
+
+      <section class="section delay-2">
+        <p>These aren’t just tools — they’re difference-makers. The kind that close more loans, win more referrals, and keep clients talking long after the deal is done. If you’re not using these yet, you’re leaving major opportunity on the table.</p>
+      </section>
+
+      <section class="section delay-3">
+        <div class="gamecard">
+          <img src="allinone.png" alt="All In One Loan Icon" />
+          <h3>All In One Loan by CMG</h3>
+          <p>This is the future of lending. Borrowers combine banking with their mortgage to pay off principal faster and save more — without giving up flexibility.</p>
+          <a href="#">Learn More</a>
+        </div>
+
+        <div class="gamecard">
+          <img src="homefundit.png" alt="HomeFundIt Icon" />
+          <h3>HomeFundIt by CMG</h3>
+          <p>Make down payments possible for first-time buyers through crowdfunding. Buyers get help. You close more loans. Everyone wins.</p>
+          <a href="#">Explore the Platform</a>
+        </div>
+
+        <div class="gamecard">
+          <img src="tca.png" alt="Total Cost Analysis Icon" />
+          <h3>Total Cost Analysis</h3>
+          <p>Empower your borrowers with real financial clarity. Side-by-side loan comparisons build trust, drive action, and elevate your conversations.</p>
+          <a href="#">See It in Action</a>
+        </div>
+
+        <div class="gamecard">
+          <img src="video.png" alt="Video Messaging Icon" />
+          <h3>BombBomb Video Messaging</h3>
+          <p>Connection builds conversion. BombBomb lets you send quick, personal videos that stand out in a noisy world. Build trust, show up as yourself, and keep your relationships strong — even from a distance.</p>
+          <a href="#">Get My Tips</a>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
