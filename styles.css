@@ -488,3 +488,8 @@ nav ul li a:hover {
   color: #6d4f38;
   letter-spacing: 0.5px;
 }
+/* Reveal Visible State */
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
