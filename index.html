@@ -3,108 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jamie Bangert | Home</title>
+  <title>Real Ones Only™</title>
   <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
   <div class="animated-background">
-    <!-- Navigation -->
-    <nav>
+
+    <!-- TOP RIGHT NAV -->
+    <nav class="top-nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="growth.html">Growth</a></li>
-        <li><a href="tools.html">Tools</a></li>
-        <li><a href="gamechangers.html">Game Changers</a></li>
-        <li><a href="whyme.html">Why Me</a></li>
-        <li><a href="connect.html">Connect</a></li>
+        <li><a href="#system">System</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#quote">Philosophy</a></li>
+        <li><a href="#connect">Connect</a></li>
       </ul>
     </nav>
 
-    <!-- SECTION 2: Manifesto -->
-    <section class="roo-manifesto">
-      <div class="container">
-        <h2>This isn’t a brand. It’s a system.</h2>
-        <p>
-          Real Ones Only™ is built for founders, builders, leaders, and top performers
-          who operate with clarity, integrity, and long-game energy.  
-          <br><br>
-          We don’t chase noise. We build movements with proof.
-          Trust is our framework. Growth is the byproduct.
-        </p>
+    <!-- HERO SECTION -->
+    <section class="roo-hero">
+      <div class="hero-content">
+        <h1>Real Ones Only™</h1>
+        <p>Building with Trust. Leading with Heart.</p>
       </div>
     </section>
 
-    <!-- SECTION 3: ROO System Overview -->
-    <section class="roo-system">
-      <div class="container">
-        <h2 class="reveal">The System That Moves Real Ones</h2>
-        <div class="pillars">
-          <div class="pillar">
-            <h3>Trust as the Framework</h3>
-            <p>We don’t guess. We build real alignment from the start — with clarity, proof, and presence.</p>
-          </div>
-          <div class="pillar">
-            <h3>Messaging with Meaning</h3>
-            <p>It’s not about what you say — it’s about what they feel. Our words move people because they’re rooted in truth.</p>
-          </div>
-          <div class="pillar">
-            <h3>Growth That Converts</h3>
-            <p>Systems that scale. Strategy that sticks. We build momentum that actually compounds.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-<!-- SECTION 4: Tools Preview Grid -->
-<section class="roo-tools">
-  <div class="container">
-    <h2 class="reveal">Tools That Move the Needle</h2>
-    <div class="tool-grid">
-      <div class="tool-card">
-        <h3>CRM That Works For You</h3>
-        <p>A good CRM should feel like a team member, not a to-do list. This one supports relationship-based pros who actually follow through.</p>
-      </div>
-      <div class="tool-card">
-        <h3>Weekly Touchpoint Template</h3>
-        <p>Stay top of mind — without overthinking. This rhythm keeps your partners engaged and your calendar full of real convos.</p>
-      </div>
-      <div class="tool-card">
-        <h3>Real Ones AM Routine</h3>
-        <p>Success starts before 9am. This is the mindset + movement rhythm used by top producers who actually feel good while building big.</p>
-      </div>
-      <div class="tool-card">
-        <h3>Real Ones Playbook</h3>
-        <p>The tactical, spiritual, and strategic system built to help loan officers scale with trust, traction, and truth. Not fluff — systems.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- SECTION 5: Editorial Brand Quote -->
-<section class="roo-quote">
-  <div class="container">
-    <blockquote>
-      “The loudest brands are rarely the most trusted.<br>
-      The quiet ones who build? They win.”
-      <span>— Real Ones Only™</span>
-    </blockquote>
-  </div>
-</section>
+    <!-- NEXT SECTION HERE (Manifesto, etc...) -->
 
-  <!-- Animation Script -->
-  <script>
-    const reveals = document.querySelectorAll('.reveal');
-    const revealOnScroll = () => {
-      for (let el of reveals) {
-        const windowHeight = window.innerHeight;
-        const elementTop = el.getBoundingClientRect().top;
-        const elementVisible = 100;
-        if (elementTop < windowHeight - elementVisible) {
-          el.classList.add('visible');
-        }
-      }
-    };
-    window.addEventListener('scroll', revealOnScroll);
-  </script>
+  </div>
 </body>
 </html>
