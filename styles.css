@@ -125,3 +125,100 @@ nav ul li a:hover {
 .social-links a:hover {
   background: #c4d9bd !important;
 }
+
+/* =======================
+   ABOUT PAGE — Editorial Luxe Styling
+   ======================= */
+
+.hero-banner {
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1608073673906-f99b8fc9a8de?auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+
+.hero-banner .overlay {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 4rem;
+  text-align: center;
+}
+
+.hero-banner h1 {
+  font-size: 56px;
+  line-height: 1.2;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-banner .tagline {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.about-intro {
+  background-color: #ffffff;
+  max-width: 900px;
+  margin: 6rem auto;
+  padding: 0 2rem;
+}
+
+.about-intro h2 {
+  font-size: 42px;
+  font-family: 'Playfair Display', serif;
+}
+
+.about-intro p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.about-pillars {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: #f0eae4;
+  padding: 6rem 4rem;
+  flex-wrap: wrap;
+}
+
+.pillar {
+  flex: 1;
+  min-width: 250px;
+}
+
+.pillar h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Playfair Display', serif;
+}
+
+.pillar p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.about-closer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.about-closer h2 {
+  font-size: 36px;
+  font-family: 'Playfair Display', serif;
+}
+
+.about-closer p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
