@@ -222,3 +222,32 @@ nav ul li a:hover {
   margin: auto;
   line-height: 1.6;
 }
+/* =======================
+   HOMEPAGE — Manifesto Section
+   ======================= */
+
+.roo-manifesto {
+  background-color: #ffffff;
+  padding: 8rem 2rem;
+  text-align: center;
+}
+
+.roo-manifesto .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.roo-manifesto h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+}
+
+.roo-manifesto p {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #3a3a3a;
+}
