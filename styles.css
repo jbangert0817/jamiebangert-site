@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #fbead6, #d6eadf, #ffe2c6, #cce8d3);
+  background-size: 400% 400%;
+  animation: shimmer 20s ease infinite;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin-top: 100px;
+}
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.top-nav li {
+  margin: 0 15px;
+}
+.top-nav a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
