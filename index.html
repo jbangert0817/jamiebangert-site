@@ -27,7 +27,7 @@
       </div>
     </section>
 
-    <!-- SECTION: Manifesto -->
+    <!-- Manifesto -->
     <section class="roo-manifesto reveal" id="manifesto">
       <div class="container">
         <h2>This isn’t a brand. It’s a system.</h2>
@@ -41,10 +41,10 @@
       </div>
     </section>
 
-    <!-- SECTION: ROO System Overview -->
+    <!-- System Overview -->
     <section class="roo-system reveal" id="system">
       <div class="container">
-        <h2 class="reveal">The System That Moves Real Ones</h2>
+        <h2>The System That Moves Real Ones</h2>
         <div class="pillars">
           <div class="pillar">
             <h3>Trust as the Framework</h3>
@@ -62,10 +62,10 @@
       </div>
     </section>
 
-    <!-- SECTION: Tools Preview -->
+    <!-- Tools Section -->
     <section class="roo-tools reveal" id="tools">
       <div class="container">
-        <h2 class="reveal">Tools That Move the Needle</h2>
+        <h2>Tools That Move the Needle</h2>
         <div class="tool-grid">
           <div class="tool-card">
             <h3>CRM That Works For You</h3>
@@ -87,7 +87,7 @@
       </div>
     </section>
 
-    <!-- SECTION: Brand Quote -->
+    <!-- Quote -->
     <section class="roo-quote reveal" id="quote">
       <div class="container">
         <blockquote>
@@ -97,33 +97,36 @@
       </div>
     </section>
 
-    <!-- SECTION: Connect -->
+    <!-- Connect -->
     <section class="roo-connect" id="connect">
       <div class="container">
         <h2 class="reveal">Let’s Connect</h2>
         <p class="reveal">More to come here soon…</p>
       </div>
     </section>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const reveals = document.querySelectorAll('.reveal');
 
-    const revealOnScroll = () => {
-      for (let el of reveals) {
-        const windowHeight = window.innerHeight;
-        const elementTop = el.getBoundingClientRect().top;
-        const elementVisible = 100;
+  </div>
 
-        if (elementTop < windowHeight - elementVisible) {
-          el.classList.add('visible');
+  <!-- Scroll Animation Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const reveals = document.querySelectorAll('.reveal');
+
+      const revealOnScroll = () => {
+        for (let el of reveals) {
+          const windowHeight = window.innerHeight;
+          const elementTop = el.getBoundingClientRect().top;
+          const elementVisible = 100;
+
+          if (elementTop < windowHeight - elementVisible) {
+            el.classList.add('visible');
+          }
         }
-      }
-    };
+      };
 
-    window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll(); // fire once on load
-  });
-</script>
+      window.addEventListener('scroll', revealOnScroll);
+      revealOnScroll();
+    });
+  </script>
 </body>
 </html>
-
