@@ -8,6 +8,7 @@
 </head>
 <body>
   <div class="animated-background">
+    <!-- Navigation -->
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -19,40 +20,57 @@
         <li><a href="connect.html">Connect</a></li>
       </ul>
     </nav>
-  <!-- SECTION 2: Manifesto -->
-<section class="roo-manifesto">
-  <div class="container">
-    <h2>This isn’t a brand. It’s a system.</h2>
-    <p>
-      Real Ones Only™ is built for founders, builders, leaders, and top performers
-      who operate with clarity, integrity, and long-game energy.  
-      <br><br>
-      We don’t chase noise. We build movements with proof.
-      Trust is our framework. Growth is the byproduct.
-    </p>
-  </div>
-</section>
-<!-- SECTION 3: ROO System Overview -->
-<section class="roo-system">
-  <div class="container">
-    <h2>The System That Moves Real Ones</h2>
-    <div class="pillars">
-      <div class="pillar">
-        <h3>Trust as the Framework</h3>
-        <p>We don’t guess. We build real alignment from the start — with clarity, proof, and presence.</p>
-      </div>
-      <div class="pillar">
-        <h3>Messaging with Meaning</h3>
-        <p>It’s not about what you say — it’s about what they feel. Our words move people because they’re rooted in truth.</p>
-      </div>
-      <div class="pillar">
-        <h3>Growth That Converts</h3>
-        <p>Systems that scale. Strategy that sticks. We build momentum that actually compounds.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
+    <!-- SECTION 2: Manifesto -->
+    <section class="roo-manifesto">
+      <div class="container">
+        <h2>This isn’t a brand. It’s a system.</h2>
+        <p>
+          Real Ones Only™ is built for founders, builders, leaders, and top performers
+          who operate with clarity, integrity, and long-game energy.  
+          <br><br>
+          We don’t chase noise. We build movements with proof.
+          Trust is our framework. Growth is the byproduct.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 3: ROO System Overview -->
+    <section class="roo-system">
+      <div class="container">
+        <h2 class="reveal">The System That Moves Real Ones</h2>
+        <div class="pillars">
+          <div class="pillar">
+            <h3>Trust as the Framework</h3>
+            <p>We don’t guess. We build real alignment from the start — with clarity, proof, and presence.</p>
+          </div>
+          <div class="pillar">
+            <h3>Messaging with Meaning</h3>
+            <p>It’s not about what you say — it’s about what they feel. Our words move people because they’re rooted in truth.</p>
+          </div>
+          <div class="pillar">
+            <h3>Growth That Converts</h3>
+            <p>Systems that scale. Strategy that sticks. We build momentum that actually compounds.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
+
+  <!-- Animation Script -->
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const revealOnScroll = () => {
+      for (let el of reveals) {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+        const elementVisible = 100;
+        if (elementTop < windowHeight - elementVisible) {
+          el.classList.add('visible');
+        }
+      }
+    };
+    window.addEventListener('scroll', revealOnScroll);
+  </script>
 </body>
 </html>
