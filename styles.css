@@ -251,3 +251,56 @@ nav ul li a:hover {
   line-height: 1.8;
   color: #3a3a3a;
 }
+/* =======================
+   HOMEPAGE — System Overview Section
+   ======================= */
+
+.roo-system {
+  background-color: #f5f3ef;
+  padding: 8rem 2rem;
+  text-align: center;
+}
+
+.roo-system .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.roo-system h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: #1a1a1a;
+}
+
+.pillars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.pillar {
+  flex: 1;
+  min-width: 250px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.pillar h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  color: #3d2b1f;
+}
+
+.pillar p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+}
