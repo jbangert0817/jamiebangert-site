@@ -20,32 +20,53 @@
       overflow-x: hidden;
     }
 
-    /* INTRO SPLASH */
     .intro-screen {
       height: 100vh;
       width: 100%;
-      background: #f9f6f3;
+      background: linear-gradient(to bottom, #f8f4ef, #f3eee9);
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
       position: relative;
+      overflow: hidden;
     }
 
     .intro-screen h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 3.5rem;
+      font-size: 4rem;
       color: #2d1e13;
       margin: 0;
       font-weight: 700;
+      animation: fadeInUp 1s ease forwards;
     }
 
-    .intro-screen p {
-      margin-top: 1.2rem;
-      font-size: 1.2rem;
-      font-weight: 400;
+    .intro-screen h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.3rem;
       color: #5a4332;
+      margin-top: 1.2rem;
+      font-weight: 400;
+      animation: fadeInUp 1.5s ease forwards;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2rem;
+      animation: bounce 2s infinite;
+      font-size: 1.2rem;
+      color: #a69486;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
     }
 
     .main-site {
@@ -86,13 +107,105 @@
     nav.top-nav a:hover {
       color: #cc8a4c;
     }
+
+    section {
+      padding: 6rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .manifesto h2,
+    .system h2,
+    .tools h2,
+    .quote blockquote,
+    .connect h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      margin-bottom: 1.5rem;
+      color: #2d1e13;
+      text-align: center;
+    }
+
+    .manifesto p,
+    .system p,
+    .tools p,
+    .quote span,
+    .connect p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #5a4332;
+      text-align: center;
+    }
+
+    .pillars {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .pillar {
+      flex: 1;
+      min-width: 240px;
+      max-width: 280px;
+    }
+    .pillar h3 {
+      font-size: 1rem;
+      font-family: 'Playfair Display', serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+      color: #3d2b1f;
+      text-align: center;
+    }
+    .pillar p {
+      text-align: center;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+    .tool-card {
+      background-color: #f1ede7;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+    }
+    .tool-card h3 {
+      font-size: 1.1rem;
+      font-family: 'Playfair Display', serif;
+      color: #3d2b1f;
+      margin-bottom: 1rem;
+    }
+
+    .quote blockquote {
+      font-size: 1.8rem;
+      line-height: 1.6;
+      font-weight: 500;
+      color: #3d2b1f;
+      position: relative;
+      font-family: 'Playfair Display', serif;
+    }
+    .quote span {
+      display: block;
+      margin-top: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
   </style>
 </head>
 <body>
   <!-- INTRO SPLASH -->
   <section class="intro-screen" id="intro">
     <h1>Real Ones Only™</h1>
-    <p>Building with Trust.<br>Leading with Heart.</p>
+    <h2>A strategic growth brand.<br>Building with Trust. Leading with Heart.</h2>
+    <div class="scroll-indicator">
+      ↓ Scroll to enter
+    </div>
   </section>
 
   <!-- NAV (Hidden initially) -->
@@ -107,14 +220,74 @@
 
   <!-- MAIN SITE CONTENT -->
   <div class="main-site" id="mainContent">
-    <!-- Everything else goes here (hero, manifesto, system, tools, etc.) -->
+    <section class="manifesto">
+      <h2>This isn’t a brand. It’s a system.</h2>
+      <p>
+        Real Ones Only™ is built for founders, builders, leaders, and top performers who operate with clarity, integrity, and long-game energy.
+      </p>
+      <p>
+        We don’t chase noise. We build movements with proof. Trust is our framework. Growth is the byproduct.
+      </p>
+    </section>
+
+    <section class="system" id="system">
+      <h2>The System That Moves Real Ones</h2>
+      <div class="pillars">
+        <div class="pillar">
+          <h3>Trust as the Framework</h3>
+          <p>We don’t guess. We build real alignment from the start — with clarity, proof, and presence.</p>
+        </div>
+        <div class="pillar">
+          <h3>Messaging with Meaning</h3>
+          <p>It’s not about what you say — it’s about what they feel. Our words move people because they’re rooted in truth.</p>
+        </div>
+        <div class="pillar">
+          <h3>Growth That Converts</h3>
+          <p>Systems that scale. Strategy that sticks. We build momentum that actually compounds.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tools" id="tools">
+      <h2>Tools That Move the Needle</h2>
+      <div class="tool-grid">
+        <div class="tool-card">
+          <h3>CRM That Works For You</h3>
+          <p>A good CRM should feel like a team member, not a to-do list. This one supports relationship-based pros who actually follow through.</p>
+        </div>
+        <div class="tool-card">
+          <h3>Weekly Touchpoint Template</h3>
+          <p>Stay top of mind — without overthinking. This rhythm keeps your partners engaged and your calendar full of real convos.</p>
+        </div>
+        <div class="tool-card">
+          <h3>Real Ones AM Routine</h3>
+          <p>Success starts before 9am. This is the mindset + movement rhythm used by top producers who actually feel good while building big.</p>
+        </div>
+        <div class="tool-card">
+          <h3>Real Ones Playbook</h3>
+          <p>The tactical, spiritual, and strategic system built to help loan officers scale with trust, traction, and truth. Not fluff — systems.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote" id="quote">
+      <blockquote>
+        “Ordinary tactics don’t build extraordinary results.”
+        <span>Real Ones Only™</span>
+      </blockquote>
+    </section>
+
+    <section class="connect" id="connect">
+      <h2>Let’s Connect</h2>
+      <p>More to come here soon…</p>
+    </section>
   </div>
 
   <script>
     window.addEventListener('scroll', () => {
       const main = document.getElementById('mainContent');
       const nav = document.getElementById('mainNav');
-      if (window.scrollY > 100) {
+      if (window.scrollY > 80) {
         main.classList.add('visible');
         nav.style.display = 'flex';
       }
