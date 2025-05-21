@@ -16,16 +16,54 @@
       padding: 0;
       font-family: 'Inter', sans-serif;
       scroll-behavior: smooth;
-      height: 100%;
-      background-color: #f8f4ef;
+      background-color: #f9f6f3;
       overflow-x: hidden;
     }
 
+    /* INTRO SPLASH */
+    .intro-screen {
+      height: 100vh;
+      width: 100%;
+      background: #f9f6f3;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .intro-screen h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      color: #2d1e13;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .intro-screen p {
+      margin-top: 1.2rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #5a4332;
+    }
+
+    .main-site {
+      opacity: 0;
+      transform: translateY(100px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    .main-site.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     nav.top-nav {
+      display: none;
       position: fixed;
       top: 1rem;
       right: 2rem;
-      z-index: 9999;
+      z-index: 999;
       background: rgba(255, 255, 255, 0.9);
       padding: 0.6rem 1.4rem;
       border-radius: 2rem;
@@ -48,72 +86,17 @@
     nav.top-nav a:hover {
       color: #cc8a4c;
     }
-
-    .hero-section {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-      text-align: center;
-      padding: 4rem 2rem;
-      background: linear-gradient(135deg, #f9f5f0, #f0e8dc);
-    }
-    .hero-bg-shapes {
-      position: absolute;
-      inset: 0;
-      background: url('https://images.unsplash.com/photo-1637566993410-37b5c295c9cf?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      filter: brightness(0.85) contrast(1.05) saturate(1.2);
-      z-index: 0;
-      opacity: 0.2;
-      animation: slowZoom 60s ease infinite;
-    }
-    @keyframes slowZoom {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-
-    .hero-text {
-      position: relative;
-      z-index: 2;
-      color: #2d1e13;
-    }
-
-    .hero-text h1 {
-      font-size: 4rem;
-      font-family: 'Playfair Display', serif;
-      margin: 0 0 1rem;
-      font-weight: 700;
-    }
-
-    .hero-text p {
-      font-size: 1.3rem;
-      font-weight: 400;
-      color: #5a4332;
-      line-height: 1.6;
-    }
-
-    .hero-cta {
-      margin-top: 2rem;
-      display: inline-block;
-      padding: 0.8rem 1.8rem;
-      background-color: #3d2b1f;
-      color: #fff;
-      font-weight: 500;
-      border-radius: 2rem;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-    .hero-cta:hover {
-      background-color: #593c28;
-    }
   </style>
 </head>
 <body>
-  <!-- NAV -->
-  <nav class="top-nav">
+  <!-- INTRO SPLASH -->
+  <section class="intro-screen" id="intro">
+    <h1>Real Ones Only™</h1>
+    <p>Building with Trust.<br>Leading with Heart.</p>
+  </section>
+
+  <!-- NAV (Hidden initially) -->
+  <nav class="top-nav" id="mainNav">
     <ul>
       <li><a href="#system">System</a></li>
       <li><a href="#tools">Tools</a></li>
@@ -122,14 +105,20 @@
     </ul>
   </nav>
 
-  <!-- HERO SECTION -->
-  <section class="hero-section">
-    <div class="hero-bg-shapes"></div>
-    <div class="hero-text">
-      <h1>Real Ones Only™</h1>
-      <p>Building with Trust. <br> Leading with Heart.</p>
-      <a href="#tools" class="hero-cta">Explore Tools</a>
-    </div>
-  </section>
+  <!-- MAIN SITE CONTENT -->
+  <div class="main-site" id="mainContent">
+    <!-- Everything else goes here (hero, manifesto, system, tools, etc.) -->
+  </div>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const main = document.getElementById('mainContent');
+      const nav = document.getElementById('mainNav');
+      if (window.scrollY > 100) {
+        main.classList.add('visible');
+        nav.style.display = 'flex';
+      }
+    });
+  </script>
 </body>
 </html>
