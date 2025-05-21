@@ -393,3 +393,37 @@ nav ul li a:hover {
   line-height: 1.6;
   color: #444;
 }
+/* =======================
+   HOMEPAGE — Brand Quote Section
+   ======================= */
+
+.roo-quote {
+  background-color: #f8f4ef;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.roo-quote .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.roo-quote blockquote {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #3d2b1f;
+  line-height: 1.6;
+  position: relative;
+}
+
+.roo-quote blockquote span {
+  display: block;
+  margin-top: 2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #8c7f72;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
