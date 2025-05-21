@@ -427,3 +427,62 @@ nav ul li a:hover {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+/* =======================
+   NAV — Floating Top Right
+   ======================= */
+.top-nav {
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 0.6rem 1.4rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.top-nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.top-nav a {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #3d2b1f;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+.top-nav a:hover {
+  color: #cc8a4c;
+}
+
+/* =======================
+   HERO — Landing Section
+   ======================= */
+.roo-hero {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f8f4ef, #efe6dc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.hero-content {
+  max-width: 800px;
+}
+.roo-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #3d2b1f;
+  margin-bottom: 1.2rem;
+}
+.roo-hero p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  color: #6d4f38;
+  letter-spacing: 0.5px;
+}
