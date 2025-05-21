@@ -7,195 +7,6 @@
   <link href="styles.css" rel="stylesheet" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap');
-
-    * {
-      box-sizing: border-box;
-    }
-    body, html {
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-      scroll-behavior: smooth;
-      background-color: #f9f6f3;
-      overflow-x: hidden;
-    }
-
-    .intro-screen {
-      height: 100vh;
-      width: 100%;
-      background: linear-gradient(to bottom, #f8f4ef, #f3eee9);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .intro-screen h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 4rem;
-      color: #2d1e13;
-      margin: 0;
-      font-weight: 700;
-      animation: fadeInUp 1s ease forwards;
-    }
-
-    .intro-screen h2 {
-      font-family: 'Inter', sans-serif;
-      font-size: 1.3rem;
-      color: #5a4332;
-      margin-top: 1.2rem;
-      font-weight: 400;
-      animation: fadeInUp 1.5s ease forwards;
-    }
-
-    .scroll-indicator {
-      position: absolute;
-      bottom: 2rem;
-      animation: bounce 2s infinite;
-      font-size: 1.2rem;
-      color: #a69486;
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
-    }
-
-    .main-site {
-      opacity: 0;
-      transform: translateY(100px);
-      transition: opacity 1s ease, transform 1s ease;
-    }
-    .main-site.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    nav.top-nav {
-      display: none;
-      position: fixed;
-      top: 1rem;
-      right: 2rem;
-      z-index: 999;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 0.6rem 1.4rem;
-      border-radius: 2rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    }
-    nav.top-nav ul {
-      display: flex;
-      gap: 1.5rem;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    nav.top-nav a {
-      text-decoration: none;
-      font-weight: 500;
-      color: #3d2b1f;
-      font-size: 0.9rem;
-      transition: color 0.3s ease;
-    }
-    nav.top-nav a:hover {
-      color: #cc8a4c;
-    }
-
-    section {
-      padding: 6rem 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .manifesto h2,
-    .system h2,
-    .tools h2,
-    .quote blockquote,
-    .connect h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.4rem;
-      margin-bottom: 1.5rem;
-      color: #2d1e13;
-      text-align: center;
-    }
-
-    .manifesto p,
-    .system p,
-    .tools p,
-    .quote span,
-    .connect p {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      color: #5a4332;
-      text-align: center;
-    }
-
-    .pillars {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-    }
-    .pillar {
-      flex: 1;
-      min-width: 240px;
-      max-width: 280px;
-    }
-    .pillar h3 {
-      font-size: 1rem;
-      font-family: 'Playfair Display', serif;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 0.5rem;
-      color: #3d2b1f;
-      text-align: center;
-    }
-    .pillar p {
-      text-align: center;
-      font-size: 0.95rem;
-      line-height: 1.6;
-    }
-
-    .tool-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
-    }
-    .tool-card {
-      background-color: #f1ede7;
-      border-radius: 1rem;
-      padding: 2rem;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.04);
-    }
-    .tool-card h3 {
-      font-size: 1.1rem;
-      font-family: 'Playfair Display', serif;
-      color: #3d2b1f;
-      margin-bottom: 1rem;
-    }
-
-    .quote blockquote {
-      font-size: 1.8rem;
-      line-height: 1.6;
-      font-weight: 500;
-      color: #3d2b1f;
-      position: relative;
-      font-family: 'Playfair Display', serif;
-    }
-    .quote span {
-      display: block;
-      margin-top: 1.5rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 500;
-    }
   </style>
 </head>
 <body>
@@ -284,14 +95,14 @@
   </div>
 
   <script>
-  window.addEventListener('scroll', () => {
-    const main = document.getElementById('mainContent');
-    const nav = document.getElementById('mainNav');
-    if (window.scrollY > 80) {
-      main.classList.add('visible');
-      nav.style.display = 'flex';
-    }
-  });
-</script>
+    window.addEventListener('scroll', () => {
+      const main = document.getElementById('mainContent');
+      const nav = document.getElementById('mainNav');
+      if (window.scrollY > 80) {
+        main.classList.add('visible');
+        nav.style.display = 'flex';
+      }
+    });
+  </script>
 </body>
 </html>
