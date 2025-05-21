@@ -6,6 +6,21 @@
   <title>Real Ones Only™</title>
   <link href="styles.css" rel="stylesheet" />
 </head>
+  <script>
+  const reveals = document.querySelectorAll('.reveal');
+  const revealOnScroll = () => {
+    for (let el of reveals) {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+      const elementVisible = 100;
+      if (elementTop < windowHeight - elementVisible) {
+        el.classList.add('visible');
+      }
+    }
+  };
+  window.addEventListener('scroll', revealOnScroll);
+</script>
+
 <body>
   <div class="animated-background">
 
