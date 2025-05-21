@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #fbead6, #d6eadf, #ffe2c6, #cce8d3);
+  background-size: 400% 400%;
+  animation: shimmer 20s ease infinite;
+  color: #222;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.top-nav li {
+  margin: 0 15px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+}
+
+.section {
+  padding: 80px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.alt {
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 12px;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.button {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  padding: 12px 20px;
+  font-weight: 600;
+  color: white;
+  background: #222;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #555;
+}
