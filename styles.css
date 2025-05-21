@@ -317,3 +317,13 @@ h1, h2, h3 {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+.main-site {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.main-site.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
