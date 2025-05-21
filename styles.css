@@ -18,12 +18,11 @@ h1, h2, h3 {
 .animated-background {
   position: relative;
   min-height: 100vh;
-  background: linear-gradient(135deg, #fbead6, #d6eadf, #ffe2c6, #cce8d3);
-  background-size: 400% 400%;
-  animation: shimmer 20s ease infinite;
+  background: linear-gradient(to bottom right, #f8f4ef, #efe6dc);
   display: flex;
   flex-direction: column;
 }
+
 
 @keyframes shimmer {
   0% { background-position: 0% 50%; }
