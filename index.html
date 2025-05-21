@@ -5,132 +5,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Real Ones Only™</title>
   <link href="styles.css" rel="stylesheet" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+      height: 100%;
+      background-color: #f8f4ef;
+      overflow-x: hidden;
+    }
+
+    nav.top-nav {
+      position: fixed;
+      top: 1rem;
+      right: 2rem;
+      z-index: 9999;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 0.6rem 1.4rem;
+      border-radius: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    nav.top-nav ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav.top-nav a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #3d2b1f;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+    nav.top-nav a:hover {
+      color: #cc8a4c;
+    }
+
+    .hero-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(135deg, #f9f5f0, #f0e8dc);
+    }
+    .hero-bg-shapes {
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1637566993410-37b5c295c9cf?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      filter: brightness(0.85) contrast(1.05) saturate(1.2);
+      z-index: 0;
+      opacity: 0.2;
+      animation: slowZoom 60s ease infinite;
+    }
+    @keyframes slowZoom {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 2;
+      color: #2d1e13;
+    }
+
+    .hero-text h1 {
+      font-size: 4rem;
+      font-family: 'Playfair Display', serif;
+      margin: 0 0 1rem;
+      font-weight: 700;
+    }
+
+    .hero-text p {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #5a4332;
+      line-height: 1.6;
+    }
+
+    .hero-cta {
+      margin-top: 2rem;
+      display: inline-block;
+      padding: 0.8rem 1.8rem;
+      background-color: #3d2b1f;
+      color: #fff;
+      font-weight: 500;
+      border-radius: 2rem;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .hero-cta:hover {
+      background-color: #593c28;
+    }
+  </style>
 </head>
 <body>
-  <div class="animated-background">
+  <!-- NAV -->
+  <nav class="top-nav">
+    <ul>
+      <li><a href="#system">System</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#quote">Philosophy</a></li>
+      <li><a href="#connect">Connect</a></li>
+    </ul>
+  </nav>
 
-    <!-- TOP RIGHT NAV -->
-    <nav class="top-nav">
-      <ul>
-        <li><a href="#system">System</a></li>
-        <li><a href="#tools">Tools</a></li>
-        <li><a href="#quote">Philosophy</a></li>
-        <li><a href="#connect">Connect</a></li>
-      </ul>
-    </nav>
-
-  <!-- HERO SECTION (LUXE VERSION) -->
-<section class="roo-hero-glow">
-  <div class="hero-overlay"></div>
-  <div class="hero-inner">
-    <h1>Real Ones Only™</h1>
-    <p>Building with Trust.<br>Leading with Heart.</p>
-    <!-- Optional CTA -->
-    <!-- <a href="#tools" class="hero-btn">Explore Tools</a> -->
-  </div>
-</section>
-
-
-    <!-- Manifesto -->
-    <section class="roo-manifesto reveal visible" id="manifesto">
-      <div class="container">
-        <h2 class="visible">This isn’t a brand. It’s a system.</h2>
-        <p class="visible">
-          Real Ones Only™ is built for founders, builders, leaders, and top performers
-          who operate with clarity, integrity, and long-game energy.  
-          <br><br>
-          We don’t chase noise. We build movements with proof.
-          Trust is our framework. Growth is the byproduct.
-        </p>
-      </div>
-    </section>
-
-    <!-- System Overview -->
-    <section class="roo-system reveal visible" id="system">
-      <div class="container">
-        <h2 class="visible">The System That Moves Real Ones</h2>
-        <div class="pillars">
-          <div class="pillar visible">
-            <h3>Trust as the Framework</h3>
-            <p>We don’t guess. We build real alignment from the start — with clarity, proof, and presence.</p>
-          </div>
-          <div class="pillar visible">
-            <h3>Messaging with Meaning</h3>
-            <p>It’s not about what you say — it’s about what they feel. Our words move people because they’re rooted in truth.</p>
-          </div>
-          <div class="pillar visible">
-            <h3>Growth That Converts</h3>
-            <p>Systems that scale. Strategy that sticks. We build momentum that actually compounds.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Tools Section -->
-    <section class="roo-tools reveal visible" id="tools">
-      <div class="container">
-        <h2 class="visible">Tools That Move the Needle</h2>
-        <div class="tool-grid">
-          <div class="tool-card visible">
-            <h3>CRM That Works For You</h3>
-            <p>A good CRM should feel like a team member, not a to-do list. This one supports relationship-based pros who actually follow through.</p>
-          </div>
-          <div class="tool-card visible">
-            <h3>Weekly Touchpoint Template</h3>
-            <p>Stay top of mind — without overthinking. This rhythm keeps your partners engaged and your calendar full of real convos.</p>
-          </div>
-          <div class="tool-card visible">
-            <h3>Real Ones AM Routine</h3>
-            <p>Success starts before 9am. This is the mindset + movement rhythm used by top producers who actually feel good while building big.</p>
-          </div>
-          <div class="tool-card visible">
-            <h3>Real Ones Playbook</h3>
-            <p>The tactical, spiritual, and strategic system built to help loan officers scale with trust, traction, and truth. Not fluff — systems.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Quote -->
-    <section class="roo-quote reveal visible" id="quote">
-      <div class="container">
-        <blockquote class="visible">
-          “Ordinary tactics don’t build extraordinary results.”
-          <span>Real Ones Only™</span>
-        </blockquote>
-      </div>
-    </section>
-
-    <!-- Connect -->
-    <section class="roo-connect reveal visible" id="connect">
-      <div class="container">
-        <h2 class="visible">Let’s Connect</h2>
-        <p class="visible">More to come here soon…</p>
-      </div>
-    </section>
-
-  </div>
-
-  <!-- Optional: Keep animation logic for future use -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const reveals = document.querySelectorAll('.reveal');
-
-      const revealOnScroll = () => {
-        for (let el of reveals) {
-          const windowHeight = window.innerHeight;
-          const elementTop = el.getBoundingClientRect().top;
-          const elementVisible = 100;
-
-          if (elementTop < windowHeight - elementVisible) {
-            el.classList.add('visible');
-          }
-        }
-      };
-
-      window.addEventListener('scroll', revealOnScroll);
-      revealOnScroll();
-    });
-  </script>
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="hero-bg-shapes"></div>
+    <div class="hero-text">
+      <h1>Real Ones Only™</h1>
+      <p>Building with Trust. <br> Leading with Heart.</p>
+      <a href="#tools" class="hero-cta">Explore Tools</a>
+    </div>
+  </section>
 </body>
 </html>
