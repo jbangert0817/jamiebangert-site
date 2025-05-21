@@ -304,3 +304,35 @@ nav ul li a:hover {
   color: #444;
   line-height: 1.7;
 }
+/* =======================
+   HOMEPAGE — Heading Glow Up
+   ======================= */
+
+/* Fade-up animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ghosted ROO background */
+.roo-system h2 {
+  position: relative;
+  z-index: 2;
+}
+
+.roo-system h2::before {
+  content: "ROO";
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 120px;
+  color: #e0ddd2;
+  opacity: 0.15;
+  z-index:
