@@ -335,7 +335,9 @@ nav ul li a:hover {
   font-size: 120px;
   color: #e0ddd2;
   opacity: 0.15;
-  z-index:
+  z-index: 0;
+}
+
 /* =======================
    HOMEPAGE — Tools Preview Section
    ======================= */
