@@ -336,3 +336,60 @@ nav ul li a:hover {
   color: #e0ddd2;
   opacity: 0.15;
   z-index:
+/* =======================
+   HOMEPAGE — Tools Preview Section
+   ======================= */
+
+.roo-tools {
+  background-color: #ffffff;
+  padding: 8rem 2rem;
+  text-align: center;
+}
+
+.roo-tools .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.roo-tools h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: #1a1a1a;
+  position: relative;
+  z-index: 2;
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.tool-card {
+  background-color: #f7f5f2;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.tool-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  margin-bottom: 1rem;
+  color: #3d2b1f;
+}
+
+.tool-card p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
